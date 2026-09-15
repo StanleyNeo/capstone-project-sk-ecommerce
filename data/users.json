@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Demo Shopper",
+    "email": "demo@shop.test",
+    "password": "demo1234",
+    "createdAt": "2026-09-15T00:00:00.000Z",
+    "_note": "Main demo account — use this one in recordings/screenshots"
+  },
+  {
+    "name": "Stanley Neo",
+    "email": "stanley@shop.test",
+    "password": "password123",
+    "createdAt": "2026-09-15T00:00:00.000Z",
+    "_note": "Owner account — your own checkout testing"
+  },
+  {
+    "name": "Test Invalid",
+    "email": "invalid@shop.test",
+    "password": "weak",
+    "createdAt": "2026-09-15T00:00:00.000Z",
+    "_note": "For negative testing: weak password + checkout error paths"
+  }
+]

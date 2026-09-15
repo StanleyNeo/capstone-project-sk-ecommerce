@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Wireless Bluetooth Earbuds",
+    "price": 39.9,
+    "category": "electronics",
+    "description": "Compact true-wireless earbuds with 24-hour total battery life, touch controls and a pocketable charging case. Great daily driver for commutes and calls.",
+    "image": "https://picsum.photos/seed/earbuds/400/300",
+    "stock": 42,
+    "tags": ["audio", "wireless", "bluetooth", "portable", "gift", "under-50", "commute"]
+  },
+  {
+    "name": "Mechanical Keyboard TKL",
+    "price": 89,
+    "category": "electronics",
+    "description": "Tenkeyless mechanical keyboard with hot-swappable switches, per-key RGB and a solid aluminium frame. Built for long coding sessions.",
+    "image": "https://picsum.photos/seed/keyboard/400/300",
+    "stock": 18,
+    "tags": ["keyboard", "mechanical", "rgb", "coding", "desk-setup", "developer"]
+  },
+  {
+    "name": "27-inch QHD Monitor",
+    "price": 249,
+    "category": "electronics",
+    "description": "27-inch 1440p IPS monitor with 99% sRGB coverage and a height-adjustable stand. A second screen that instantly upgrades any desk.",
+    "image": "https://picsum.photos/seed/monitor/400/300",
+    "stock": 11,
+    "tags": ["monitor", "display", "desk-setup", "work-from-home", "productivity"]
+  },
+  {
+    "name": "USB-C 7-in-1 Hub",
+    "price": 45,
+    "category": "electronics",
+    "description": "One USB-C port becomes HDMI, 3x USB-A, SD card reader and 100W pass-through charging. The dongle that ends dongle hunting.",
+    "image": "https://picsum.photos/seed/usbhub/400/300",
+    "stock": 33,
+    "tags": ["usb-c", "hub", "adapter", "laptop", "portable", "under-50", "travel"]
+  },
+  {
+    "name": "Full HD Webcam with Mic",
+    "price": 59,
+    "category": "electronics",
+    "description": "1080p webcam with dual noise-reducing microphones and a privacy shutter. Look and sound sharp on every video call.",
+    "image": "https://picsum.photos/seed/webcam/400/300",
+    "stock": 25,
+    "tags": ["webcam", "video-call", "work-from-home", "streaming", "gift"]
+  },
+  {
+    "name": "Lightweight Running Shoes",
+    "price": 79,
+    "category": "fitness",
+    "description": "Breathable mesh running shoes with responsive foam cushioning, sized for daily 5-10km runs. Grippy outsole for wet pavements.",
+    "image": "https://picsum.photos/seed/runningshoes/400/300",
+    "stock": 27,
+    "tags": ["running", "shoes", "jogging", "gift", "outdoor", "marathon"]
+  },
+  {
+    "name": "Non-Slip Yoga Mat 6mm",
+    "price": 29,
+    "category": "fitness",
+    "description": "6mm cushioned yoga mat with a textured non-slip surface and carry strap. Kind to knees, unfriendly to excuses.",
+    "image": "https://picsum.photos/seed/yogamat/400/300",
+    "stock": 38,
+    "tags": ["yoga", "mat", "stretching", "home-workout", "under-50", "gift"]
+  },
+  {
+    "name": "Adjustable Dumbbell Pair 5kg",
+    "price": 55,
+    "category": "fitness",
+    "description": "Pair of 5kg dumbbells with knurled steel handles and rubber-coated plates that won't scar your floor. Home-gym essential.",
+    "image": "https://picsum.photos/seed/dumbbell/400/300",
+    "stock": 14,
+    "tags": ["strength", "weights", "home-gym", "dumbbell", "muscle"]
+  },
+  {
+    "name": "Resistance Bands Set of 5",
+    "price": 19,
+    "category": "fitness",
+    "description": "Five loop bands from light to extra-heavy with a door anchor and carry bag. A full gym that fits in a drawer.",
+    "image": "https://picsum.photos/seed/bands/400/300",
+    "stock": 51,
+    "tags": ["resistance", "bands", "travel", "under-50", "cheap", "home-workout", "gift"]
+  },
+  {
+    "name": "Smart Fitness Watch",
+    "price": 129,
+    "category": "fitness",
+    "description": "GPS fitness watch tracking heart rate, sleep, SpO2 and 20+ sport modes, with a 10-day battery. Your training log on your wrist.",
+    "image": "https://picsum.photos/seed/fitnesswatch/400/300",
+    "stock": 9,
+    "tags": ["watch", "gps", "running", "heart-rate", "tracking", "tech"]
+  },
+  {
+    "name": "LED Desk Lamp with USB Port",
+    "price": 35,
+    "category": "home",
+    "description": "Dimmable LED desk lamp with 5 colour temperatures, a swing arm and a USB charging port in the base. Easy on late-night eyes.",
+    "image": "https://picsum.photos/seed/desklamp/400/300",
+    "stock": 22,
+    "tags": ["lamp", "desk-setup", "lighting", "under-50", "study", "work-from-home"]
+  },
+  {
+    "name": "Ceramic Coffee Mug Set of 4",
+    "price": 24,
+    "category": "home",
+    "description": "Four 350ml stoneware mugs in muted earth tones, dishwasher and microwave safe. Housewarming-proof gift.",
+    "image": "https://picsum.photos/seed/mugs/400/300",
+    "stock": 44,
+    "tags": ["kitchen", "coffee", "mugs", "gift", "under-50", "cheap", "housewarming"]
+  },
+  {
+    "name": "Digital Air Fryer 4.5L",
+    "price": 99,
+    "category": "home",
+    "description": "4.5-litre digital air fryer with 8 presets and a dishwasher-safe basket. Crispy results with a tablespoon of oil.",
+    "image": "https://picsum.photos/seed/airfryer/400/300",
+    "stock": 16,
+    "tags": ["kitchen", "cooking", "appliance", "healthy", "gift"]
+  },
+  {
+    "name": "Robot Vacuum Cleaner",
+    "price": 199,
+    "category": "home",
+    "description": "Slim robot vacuum with LiDAR room mapping, app scheduling and auto-return charging. It cleans while you don't.",
+    "image": "https://picsum.photos/seed/robotvacuum/400/300",
+    "stock": 0,
+    "tags": ["vacuum", "robot", "smart-home", "cleaning", "appliance", "tech"]
+  },
+  {
+    "name": "Scented Candle Gift Set",
+    "price": 32,
+    "category": "home",
+    "description": "Three soy-wax candles (lavender, sandalwood, yuzu) in amber glass jars, 25 hours of burn each. The universal 'no idea what to buy' gift.",
+    "image": "https://picsum.photos/seed/candles/400/300",
+    "stock": 30,
+    "tags": ["candle", "gift", "under-50", "relaxation", "home-decor", "cheap"]
+  },
+  {
+    "name": "Clean Code — Robert C. Martin",
+    "price": 42,
+    "category": "books",
+    "description": "The classic handbook on writing readable, maintainable code, with Java examples that translate to any language. Required reading for new developers.",
+    "image": "https://picsum.photos/seed/cleancode/400/300",
+    "stock": 20,
+    "tags": ["programming", "coding", "career", "developer", "under-50", "study"]
+  },
+  {
+    "name": "Deep Learning — Goodfellow, Bengio, Courville",
+    "price": 68,
+    "category": "books",
+    "description": "The definitive deep learning textbook: from linear algebra foundations to CNNs, RNNs and beyond. The book behind half the field's vocabulary.",
+    "image": "https://picsum.photos/seed/deeplearning/400/300",
+    "stock": 8,
+    "tags": ["ai", "machine-learning", "deep-learning", "textbook", "study", "career"]
+  },
+  {
+    "name": "The Pragmatic Programmer (20th Anniversary)",
+    "price": 45,
+    "category": "books",
+    "description": "Hunt and Thomas's timeless career guide: DRY, tracer bullets, and the habits that separate journeymen from masters.",
+    "image": "https://picsum.photos/seed/pragmatic/400/300",
+    "stock": 15,
+    "tags": ["programming", "career", "developer", "under-50", "gift"]
+  },
+  {
+    "name": "Atomic Habits — James Clear",
+    "price": 22,
+    "category": "books",
+    "description": "The 1%-better-every-day system for building good habits and breaking bad ones. Short chapters, immediate payoff.",
+    "image": "https://picsum.photos/seed/atomichabits/400/300",
+    "stock": 35,
+    "tags": ["self-improvement", "habits", "bestseller", "cheap", "under-50", "gift"]
+  },
+  {
+    "name": "Designing Data-Intensive Applications — Kleppmann",
+    "price": 62,
+    "category": "books",
+    "description": "The 'boar book' on databases, distributed systems and stream processing. The single best backend engineering book of the decade.",
+    "image": "https://picsum.photos/seed/ddia/400/300",
+    "stock": 12,
+    "tags": ["databases", "backend", "distributed-systems", "developer", "career", "study"]
+  }
+]
