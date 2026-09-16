@@ -16,7 +16,7 @@
   {
     "name": "Test Invalid",
     "email": "invalid@shop.test",
-    "password": "weak",
+    "password": "weak123",
     "createdAt": "2026-09-15T00:00:00.000Z",
     "_note": "For negative testing: weak password + checkout error paths"
   }
