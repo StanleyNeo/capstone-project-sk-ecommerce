@@ -19,3 +19,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Backup files don't belong in git
+"`n*.bak"

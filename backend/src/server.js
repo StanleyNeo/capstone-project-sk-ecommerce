@@ -21,6 +21,7 @@ function printBanner() {
   console.log('            GET  /api/products/:id');
   console.log(' Orders:    POST /api/orders   (400 bad fields / 404 unknown / 409 out of stock)');
   console.log('            GET  /api/orders/:userId');
+  console.log(' Users:     GET  /api/users/lookup?email=');          // ← ADD THIS  
   console.log(' AI:        (Day 6) POST /api/chatbot/chat · POST /api/search/smart');
   console.log(' Health:    GET  /api/health');
   console.log('==============================================');

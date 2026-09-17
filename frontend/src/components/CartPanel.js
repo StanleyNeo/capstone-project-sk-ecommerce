@@ -1,7 +1,7 @@
-// Day 4 - CartPanel : slide-in drawer. Checkout is a placeholder until Day 5.
+// Day 5 - CartPanel : checkout posts to the API; server errors show verbatim
 import siteConfig from '../siteConfig';
 
-export default function CartPanel({ cart, total, onSetQty, onClose }) {
+export default function CartPanel({ cart, total, onSetQty, onClose, onCheckout, busy, error }) {
   return (
     <>
       <div className="overlay" onClick={onClose} />
@@ -28,10 +28,12 @@ export default function CartPanel({ cart, total, onSetQty, onClose }) {
           <span>{siteConfig.currencySymbol}{total.toFixed(2)}</span>
         </div>
 
-        <button className="checkout-btn" disabled={cart.length === 0}
-                title="Wired to POST /api/orders on Day 5">
-          Checkout (arrives Day 5)
+        {error && <div className="error-box">⚠️ {error}</div>}
+
+        <button className="checkout-btn" disabled={cart.length === 0 || busy} onClick={onCheckout}>
+          {busy ? 'Placing order…' : 'Checkout'}
         </button>
+        <p className="fine-print">The server re-checks price &amp; stock — the API is the gatekeeper.</p>
       </aside>
     </>
   );

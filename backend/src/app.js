@@ -5,6 +5,7 @@ const cors = require('cors');
 
 const productRoutes = require('./routes/productRoutes');
 const orderRoutes = require('./routes/orderRoutes');
+const userRoutes = require('./routes/userRoutes');        // ← ADD THIS
 const { notFound, errorHandler } = require('./middleware/errorHandler');
 
 const app = express();
@@ -19,6 +20,7 @@ app.get('/api/health', (req, res) =>
 
 app.use('/api/products', productRoutes);
 app.use('/api/orders', orderRoutes);
+app.use('/api/users', userRoutes);                        // ← ADD THIS
 
 app.use(notFound);                  // nothing matched -> 404 envelope
 app.use(errorHandler);              // anything thrown -> translated error

@@ -1,8 +1,16 @@
-// Day 4 - ProductCard : one product. Out-of-stock = disabled button (matches API's 409)
+import { useState } from 'react';
 import siteConfig from '../siteConfig';
 
 export default function ProductCard({ product, onAdd }) {
   const out = product.stock <= 0;
+  const [added, setAdded] = useState(false);
+
+  const handleAdd = () => {
+    onAdd(product);
+    setAdded(true);
+    setTimeout(() => setAdded(false), 800);   // flash "Added!" for 0.8s
+  };
+
   return (
     <div className="card">
       <img src={product.image} alt={product.name} loading="lazy" />
@@ -15,8 +23,8 @@ export default function ProductCard({ product, onAdd }) {
         <span className="price">
           {siteConfig.currencySymbol}{product.price.toFixed(2)}
         </span>
-        <button className="add-btn" disabled={out} onClick={() => onAdd(product)}>
-          {out ? 'Unavailable' : 'Add to cart'}
+        <button className="add-btn" disabled={out} onClick={handleAdd}>
+          {out ? 'Unavailable' : added ? '✓ Added!' : 'Add to cart'}
         </button>
       </div>
     </div>

@@ -2,6 +2,7 @@
 // Rebrand = edit this file + reseed data/*.json. Components stay untouched.
 const siteConfig = {
   businessName: 'NeoMart',
+  demoUserEmail: 'demo@shop.test',
   tagline: 'A demo store — same engine, any business',
   currencySymbol: '$',
   colors: {
