@@ -49,3 +49,16 @@ export function createOrder(userId, items) {
 export function getOrders(userId) {
   return call(`${BASE}/orders/${userId}`);
 }
+
+// ---- Day 6 ----
+export function chat(message) {
+  return post(`${BASE}/chatbot/chat`, { message });
+}
+
+export function smartSearch(query) {
+  return post(`${BASE}/search/smart`, { query });
+}
+
+export function aiStats() {
+  return call(`${BASE}/ai/stats`);
+}

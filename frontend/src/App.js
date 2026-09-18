@@ -1,13 +1,15 @@
 // Day 5 - App.js : checkout flow + order history (+ double-submit lock + error clearing)
 import { useCallback, useEffect, useRef, useState } from 'react';   // ← NEW: useRef added
 import siteConfig from './siteConfig';
-import { getProducts, lookupUser, createOrder, getOrders } from './api/client';
+import { getProducts, lookupUser, createOrder, getOrders, smartSearch } from './api/client';
 import Header from './components/Header';
 import FilterBar from './components/FilterBar';
 import ProductCard from './components/ProductCard';
 import CartPanel from './components/CartPanel';
 import OrdersPanel from './components/OrdersPanel';
 import './App.css';
+import ChatWidget from './components/ChatWidget';
+import SmartSearchBar from './components/SmartSearchBar';
 
 export default function App() {
   const [products, setProducts] = useState([]);
@@ -26,6 +28,30 @@ export default function App() {
   const [orders, setOrders] = useState([]);
   const [ordersOpen, setOrdersOpen] = useState(false);
   const checkoutLock = useRef(false);              // ← NEW: hard double-submit guard
+
+  // Day 6: Step 7a 
+  const [searchNote, setSearchNote] = useState(null);   // smart-search interpretation banner
+
+  const handleSmartSearch = async (query) => {
+  setError('');
+  try {
+    const body = await smartSearch(query);
+    setProducts(body.data);
+    setCount(body.count);
+    setSearchNote({
+      query,
+      maxPrice: body.meta?.maxPrice,
+      interpreted: body.meta?.interpreted
+    });
+  } catch (e) {
+    setError(e.message);
+  }
+};
+
+const clearSmartSearch = () => {
+  setSearchNote(null);
+  load();   // back to normal filter-driven grid
+};
 
   // Brand the app from ONE config file (template rule #1)
   useEffect(() => {
@@ -143,6 +169,18 @@ export default function App() {
 
       <FilterBar filters={filters} onChange={setFilters} />
 
+      
+      <SmartSearchBar onSearch={handleSmartSearch} />
+      {searchNote && (
+        <div className="smart-note">
+          ✨ Smart results for “{searchNote.query}”
+          {searchNote.maxPrice && ` · max price $${searchNote.maxPrice}`}
+          {searchNote.interpreted?.categories?.length > 0 &&
+            ` · AI read it as: ${searchNote.interpreted.categories.join(', ')}`}
+          <button onClick={clearSmartSearch}>Clear</button>
+        </div> // Day 6: Step 7b
+      )} 
+
       <p className="count-line">
         {loading ? 'Loading…' : `${count} product${count === 1 ? '' : 's'}`}
       </p>
@@ -171,6 +209,8 @@ export default function App() {
       )}
 
       {ordersOpen && <OrdersPanel orders={orders} onClose={() => setOrdersOpen(false)} />}
+    
+    <ChatWidget onAdd={addToCart} />
     </div>
   );
 }
