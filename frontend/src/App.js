@@ -50,7 +50,7 @@ export default function App() {
 
 const clearSmartSearch = () => {
   setSearchNote(null);
-  load();   // back to normal filter-driven grid
+  load();   // back to normal filter-driven grid — keep this active
 };
 
   // Brand the app from ONE config file (template rule #1)
