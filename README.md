@@ -1,9 +1,10 @@
-# NeoMart — Full-Stack E-Commerce with an AI Shop Assistant
+# NeoMart — Full-Stack AI-Powered E-Commerce Capstone
 
-> A demo store engine — **same engine, any business**. React + Express + MongoDB, with a
+> A demo store — **same engine, any business**. React + Express + MongoDB, with a
 > hallucination-resistant AI chatbot and a 3-layer smart search. Built in 7 days as a
 > 2026 regeneration of my 2025 AI-powered LMS capstone, reusing its architecture and
 > upgrading the AI stack to the 2026 provider landscape.
+> **Live demo:** https://neomart-theta.vercel.app — backend on Render free tier sleeps when idle; first load ~30s while it wakes
 
 ![NeoMart storefront](docs/screenshots/day4-storefront.png)
 
