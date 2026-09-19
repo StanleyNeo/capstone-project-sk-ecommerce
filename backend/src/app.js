@@ -11,7 +11,10 @@ const { notFound, errorHandler } = require('./middleware/errorHandler');
 
 const app = express();
 
-app.use(cors());                    // Day 4 frontend (port 3000) calls this API
+// app.use(cors());                    // Day 4 frontend (port 3000) calls this API
+// Phase 3: comma-separated allowlist — localhost for dev, Vercel domain for prod
+const allowed = (process.env.CLIENT_URLS || 'http://localhost:3000').split(',');
+app.use(cors({ origin: allowed }));
 app.use(express.json());            // parse JSON bodies
 app.use(morgan('dev'));             // one log line per request — watch it during demos
 

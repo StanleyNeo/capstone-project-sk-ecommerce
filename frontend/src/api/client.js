@@ -1,5 +1,5 @@
-// Day 5 - api/client.js : GET + POST, envelope-aware, status-carrying errors
-const BASE = '/api';   // CRA proxy forwards this to http://localhost:5000
+// Phase 3: dev = '/api' (CRA proxy to :5000); prod = 'https://<render>.onrender.com/api' (set in Vercel)
+const BASE = (process.env.REACT_APP_API_URL || '') + '/api';
 
 async function parse(res) {
   const body = await res.json();
