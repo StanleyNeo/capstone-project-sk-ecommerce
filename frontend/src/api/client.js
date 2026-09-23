@@ -1,5 +1,7 @@
 // Phase 3: dev = '/api' (CRA proxy to :5000); prod = 'https://<render>.onrender.com/api' (set in Vercel)
-const BASE = (process.env.REACT_APP_API_URL || '') + '/api';
+// const BASE = (process.env.REACT_APP_API_URL || '') + '/api';
+
+const BASE = (import.meta.env.VITE_API_URL || '') + '/api';
 
 async function parse(res) {
   const body = await res.json();
