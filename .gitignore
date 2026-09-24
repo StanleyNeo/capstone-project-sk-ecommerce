@@ -22,3 +22,7 @@ Thumbs.db
 
 # Backup files don't belong in git
 "`n*.bak"
+
+# backend-py
+backend-py/.env
+backend-py/.venv/
